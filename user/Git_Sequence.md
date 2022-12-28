@@ -1,14 +1,17 @@
 # **`Git 순서도`**
 
-1. $ git init
+## 1. $ git init
+> git 저장소 생성
 ```
 $ git init
 ```
-2. $ git add <>
+## 2. $ git add <>
+> 1통에서 2통으로 보냄
 ```
 $ git add Git_Sequence.md
 ```
-3. $ git status
+## 3. $ git status
+> 1통, 2통 상태 보기
 ```
 $ git status
 
@@ -17,7 +20,8 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   Git_Sequence.md
 ```
-4. git commit -m 'ver.1.0.0'
+## 4. git commit -m 'ver.1.0.0'
+> 2통에서 3통으로 보냄
 ```
 $ git commit -m 'ver.1.0.0'
 
@@ -25,7 +29,8 @@ $ git commit -m 'ver.1.0.0'
  1 file changed, 3 insertions(+)
  create mode 100644 Git_Sequence.md
  ```
-5. git log
+## 5. git log
+> 3통 상태 보기
 ```
 $ git log
 
@@ -35,7 +40,8 @@ Date:   Wed Dec 28 10:26:40 2022 +0900
 
     ver.1.0.0
 ```
-6. git log --oneline
+## 6. git log --oneline
+> 3통 상태 보기 (commit 하나당 한줄로 표현)
 ```
 $ git log --oneline
 
@@ -43,19 +49,22 @@ $ git log --oneline
 73e9348 My Goals_Ver.1.0.0
 302ff04 My_Goals
 ```
-7. git reomote add origin `url`
+## 7. git reomote add origin `url`
+> 원격저장소 추가
 ```
 $ git remote add origin https://github.com/ParkJiHwan22/Test_1.git
 ```
-8. git remote -v
+## 8. git remote -v
+> 원격저장소 정보 확인
 ```
 $ git remote -v
 
 origin  https://github.com/ParkJiHwan22/Test_1.git (fetch)
 origin  https://github.com/ParkJiHwan22/Test_1.git (push)
 ```
-9. $ git push origin master
-```       
+## 9. $ git push origin master
+> 원격저장소로 보내기
+```
 $ git push origin master
 
 info: please complete authentication in your browser...
@@ -69,7 +78,8 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/ParkJiHwan22/Test_1.git
  * [new branch]      master -> master
  ```
-10. git pull origin master
+## 10. git pull origin master
+> 원격저장소에서 가져오기
 ```
 $ git pull origin master
 
@@ -79,7 +89,8 @@ Already up to date.
 ```
 
 
-11. git clone (url)
+## 11. git clone (url)
+> 원격저장소 복제
 ```
 $ git clone https://github.com/kdt-live/TIL-2nd.git
 

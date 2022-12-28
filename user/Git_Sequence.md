@@ -75,7 +75,7 @@ $ git pull origin master
 
 From https://github.com/kdt-live/TIL-2nd
  * branch            master     -> FETCH_HEAD
-Already up to date
+Already up to date.
 ```
 
 

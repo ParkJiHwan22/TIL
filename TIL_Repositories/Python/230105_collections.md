@@ -20,7 +20,7 @@
 
 ### 딕셔너리(Dictionary) 생성
 - key와 value가 쌍으로 이뤄진 자료구조
-    - key는 변경 불가능한 데이터(immutable)만 활용 가능
+    - `key`는 `변경 불가능한 데이터(immutable)만 활용` 가능
     - str, int, float, bool, tuple, range
     - value는 모든 값으로 설정 가능(List, Dictionary 등)
 
@@ -36,7 +36,7 @@ pokemon['꼬부기'] = 바위
 ```
 
 ### 딕셔너리(Dictionary)  키-값 삭제
-- 키를 삭제하고자하면 .pop을 활용하여 삭제하고자 하는 키를 전달
+- 키를 삭제하고자하면 `.pop`을 활용하여 삭제하고자 하는 키를 전달
 - 키가 없는 경우는 KeyyError 발생
 
 ### `딕셔너리 순회`

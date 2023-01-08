@@ -42,9 +42,9 @@ pokemon['꼬부기'] = 바위
 ### `딕셔너리 순회`
 - 딕셔너리는 기본적으로 key를 순회하며, key값을 활용
 - 추가 메서드를 활용하여 순회할 수 있음
-    - keys() : key로 구성된 결과
-    - values() : value로 구성된 결과
-    - items() : (Key, value)의 튜플로 구성된 결과
+    - dict_keys() : key로 구성된 결과
+    - dict_values() : value로 구성된 결과
+    - dict_items() : (Key, value)의 튜플로 구성된 결과
 
 
 

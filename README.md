@@ -10,7 +10,7 @@
 ##### 2022.12.27 ~ 2022.12.29
 
 ### - [Python](https://github.com/ParkJiHwan22/TIL/tree/master/TIL_Repositories/Python)
-##### 2023.01.02 ~
+##### 2023.01.02 ~ 2023.01.13
 
 ### -[IT_Knowledge](https://github.com/ParkJiHwan22/TIL/tree/master/TIL_Repositories/IT_Knowledge)
 ##### 2022.12.30 ~ 2023.01.02

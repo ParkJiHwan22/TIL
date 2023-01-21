@@ -48,3 +48,37 @@ print(my_dict.keys()) # dict_keys(['name', 'role'])
 print(my_dict.values()) # dict_values(['tak', 'teacher'])
 print(my_dict.items()) # dict_items([('name', 'tak'), ('role', 'teacher')])
 ```
+
+### **Input 대체**
+
+``` python
+members = [
+    "Jay", "John", "John", "Jay", "Jack", "Jack", "John", "Jo", "Jo", "Jack"
+]
+
+count = {} 
+
+for member in members:
+    # if member in count:
+    #     count[member] = count[member] + 1
+    # else:
+    #     count[member] = 1
+    count[member] = count.get(member, 0) + 1
+    
+count_items = count.items()
+print(count_items) # dict_items([('Jay', 2), ('John', 3), ('Jack', 3), ('Jo', 2)])
+
+from collections import Counter 
+new_count_items = Counter(members)
+print(new_count_items) # Counter({'John': 3, 'Jack': 3, 'Jay': 2, 'Jo': 2})
+```
+
+
+
+``` python
+from collections import Counter 
+
+print(Counter('pen pineapple apple pen'))
+print(Counter('pen pineapple apple pen').most_common())
+print(Counter('pen pineapple apple pen').most_common(2))
+```

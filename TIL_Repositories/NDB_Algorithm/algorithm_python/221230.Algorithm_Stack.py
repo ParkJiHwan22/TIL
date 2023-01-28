@@ -36,28 +36,32 @@
 # print(queue) # 나중에 들어온 순서대로 출력
 
 ### 우선순위 큐 라이브러리를 활용한 힙 구현 예제 (Python)
-import sys
 import heapq
-input = sys.stdin.readline
 
 def heapsort(iterable):
     h = []
     result = []
     # 모든 원소를 차례대로 힙에 삽입
     for value in iterable:
-        heapq(h, value)
+        heapq.heappush(h, value) # value에 - 붙이고 heapq에 - 붙이면 최대 힙
     # 힙에 삽입된 모든 원소를 차례대로 꺼내어 담기
     for i in range(len(h)):
         result.append(heapq.heappop(h))
     return result
 
-n = int(input())
-arr = []
+result = heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
+print(result) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-for i in range(n):
-    arr.append(int(input()))
 
-res = heapsort(arr)
 
-for i in range(n):
-    print(res[i])
+
+# n = int(input())
+# arr = []
+
+# for i in range(n):
+#     arr.append(int(input()))
+
+# res = heapsort(arr)
+
+# for i in range(n):
+#     print(res[i])

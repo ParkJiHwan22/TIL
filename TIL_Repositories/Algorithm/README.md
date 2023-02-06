@@ -2,7 +2,7 @@
 
 ## 🔑목록
 
-### - [*Alforithm_Basic*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Git_GitHub)
+### - [*Algorithm_Basic*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Algorithm/230116_algorithm_basic.md)
 ##### 2022.01.16
 
 ### - [*Time_Complexiry*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Algorithm/230117_%20time_complexity.md)
@@ -31,5 +31,8 @@
 
 ### - [*Graph*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Algorithm/230202_graph.md)
 ##### 2022.02.02
+
+### - [*DFS*]()
+##### 2022.02.06
 
 

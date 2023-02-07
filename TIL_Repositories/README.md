@@ -12,7 +12,7 @@
 ### - [*Python*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Python)
 ##### 2023.01.02 ~ 2023.01.13
 
-### -[*Algorithm*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/NDB_Algorithm)
+### -[*Algorithm*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Algorithm)
 ##### 2022.01.16 ~
 
 ## 🍭 인강으로 배운 내용

@@ -12,9 +12,11 @@
 ### - [*Python*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Python)
 ##### 2023.01.02 ~ 2023.01.13
 
-### -[*Algorithm*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Algorithm)
-##### 2022.01.16 ~
+### - [*Algorithm*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Algorithm)
+##### 2023.01.16 ~ 2023.02.07
 
+### - [*SQL*]()
+##### 2023.02.08 ~
 ## 🍭 인강으로 배운 내용
 
 ### -[*IT_Knowledge*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/IT_Knowledge)

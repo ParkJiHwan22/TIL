@@ -30,10 +30,18 @@
 1. Table(Relation)
     - 데이터를 기록하는 곳
 2. Field(Column, Attribute)
+    - 각 필드에는 고유한 데이터 형식(타입)이 지정됨
 3. Record(Row, Tuple)
+    - 각 레코드에는 구체적인 데이터 값이 저장됨
+
 4. Database(Schema)
+    - 테이블의 집합(set of tables)
 5. Primary Key
+    - 각 레코드의 고유한 값
+    - 관계형 데이터베이스에서 `레코드의 식별자`로 활용
 6. Foreign Key
+    - 테이블의 필드 중 다른 테이블의 레코드를 식별할 수 있는 키
+    - 각 레코드에서 서로 다른 테이블 간의 `관계를 만드는 데` 사용
 
 ## 2. RDBMS
 
@@ -57,3 +65,10 @@
 
 ### MySQL 구조
 - Table ⊂ Database ⊂ Database Server
+
+## 정리
+- Table은 데이터를 기록하는 최종 위치
+- 모든 Table에는 행에서 고유하게 식별 가능한 `기본 키`라는 속성이 있으며, `외래 키`를 사용하여 각 행에서 서로 다른 테이블 간의 관계를 만들 수 있음
+- 데이터는 기본 키 또는 외래 키를 통해 결합(join)될 수 있는 여러 테이블에 걸쳐 구조화 됨
+- 각 Table은 Database로 그룹핑됨
+- MySQL은 이러한 Database들을 그룹핑하여 관련된 작업을 수행하는 Database Server

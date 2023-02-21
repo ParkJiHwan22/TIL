@@ -110,6 +110,18 @@ WHERE
 ### EXISTS practice #2
 - Paris에 있는 사무실에서 일하는 모든 직원의 번호, 이름, 성을 조회(직원 테이블은 employees, 사무실 테이블은 offices이며 두 테이블의 officeCode 필드를 기준으로 비교)
 
+``` SQL
+SELECT * FROM employees;
+SELECT * FROM offices;
+
+SELECT employeeNumber, firstName, lastName
+FROM employees
+WHERE EXISTS (
+	SELECT * 
+	FROM offices
+	WHERE city = 'Paris' AND employees.officeCode = offices.officeCode
+);
+```
 
 # 2. Conditional Statements
 

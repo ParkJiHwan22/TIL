@@ -1,0 +1,44 @@
+<!DOCTYPE html>  <!--문서의 타입이 HTML이다-->
+<html> 
+<head>  <!--사용자에게 보이지 않는 부분-->
+  <meta charset="UTF-8"> <!--닫는 태그가 없음, 설정에 관련된 태그-->
+  <title> 컨텐츠 </title>
+  <style>
+    h1 { /* 제공되는 다양한 선택자 */
+      color: magenta;
+    }
+
+    .make-red { /* 여러번 쓸 수 있다 */
+      color: red;
+    }
+
+    #make-skyblue { /* 여러번 쓸 수 있지만 한곳에다가 쓰는게 원칙 */
+      color: skyblue;
+    }
+  </style>
+</head>
+<body> <!--사용자에게 보이는 부분-->
+안녕하세요.<br>반갑습니다.
+  <p>This is my page :D</p>
+  <a href="https://finance.naver.com/item/main.naver?code=108320">LX세미콘으로 이동!</a>
+  <img src="sample.png" alt="LX세미콘 2023년 2월 22일 10시 40분 주가"> <!--이미지 출처가 어디에 있는지-->
+  <img src="https://random.imagecdn.app/500/150" alt="랜덤 이미지">
+  <h1>메인 제목</h1>
+  <h1>또다른 메인 제목</h1>
+  <h2 id = "make-skyblue">중 제목</h2>
+  <p class ="make-red">This is red!</p>
+  <p class ="make-red">This is red!!!!!</p>
+  <p>이건 <em>emphasis</em> 입니다.</p>
+  <p>이건 <strong>strong</strong> 입니다.</p>
+  <ol>
+    <li>파이썬</li>
+    <li>알고리즘</li>
+    <li>DB</li>
+  </ol>
+  <ul>
+    <li>파이썬</li>
+    <li>알고리즘</li>
+    <li>DB</li>
+  </ul>
+</body>
+</html>

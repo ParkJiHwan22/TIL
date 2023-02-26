@@ -126,6 +126,7 @@ CSS Selectors: HTML 요소를 선택하여 스타일을 적용할 수 있도록 
 
 ### Specificity (우선순위)
 - 선택자 별로 정해진 우선순위 점수에 따라 점수가 높은 규칙이 사용
+
 1. importance(반드시 필요한 경우에만 사용할 것)
     - !important
 

@@ -1,6 +1,6 @@
-# **Front-end**
+# **🏗 Front-end**
 
-## 목록
+## 👷‍♂️목록
 ### - [Web_Fundamentals_of_HTML_and_CSS](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Front-end/230222_Web_Fundamentals_of_HTML_and_CSS.md)
 #### 2023.02.22
 
@@ -16,5 +16,5 @@
 ### - [Flexible_box_for_CSS_layout](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Front-end/230228_Web_Flexible_box_for_CSS_layout.md)
 #### 2023.02.28
 
-### - [Semantic_Web]()
+### - [Semantic_Web](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Front-end/230301_Semantic_Web.md)
 #### 2023.03.01

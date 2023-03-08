@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Block */
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Element */
+    .card__title {
+      font-size: 2rem;
+    }
+
+    .card__list {
+      margin: 0;      
+    }
+
+    .card__button {
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Modifier */
+    .card__list-item--none {
+      list-style: none;
+    }
+
+    .card__button--red {
+      background-color: red;  
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2 class="card__title">제목</h2>
+    <ul class="card__list">
+      <li class=".card__list-item--none">항목 1</li>
+      <li class=".card__list-item--none">항목 2</li>
+    </ul>
+    <button class="card__button card__button--red">버튼</button>
+  </div>
+</body>
+
+</html>

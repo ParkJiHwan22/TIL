@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person = {
+      name: 'Sophia',
+      greeting: function () {
+        return `Hello my name is ${this.name}`
+      },
+    }
+
+    // greeting 메서드 호출
+    console.log(person.greeting())
+
+    // this
+    // 단순 호출 시
+    const myFunc = function () {
+      return this // window를 호출
+    }
+
+    console.log(myFunc())
+
+
+    const myObj2 = {
+      numbers: [1, 2, 3],
+      myFunc: function () {
+        this.numbers.forEach(function (number) {
+          console.log(number) // 1 2 3
+          console.log(this) // window
+        })
+      }
+    }
+
+  </script>
+  
+</body>
+</html>

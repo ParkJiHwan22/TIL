@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>로또 추천 번호</h1>
+  <button id="btn">행운 번호 받기</button>
+  <div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    // 1. 필요한 모든 요소 선택
+    const h1Tag = document.querySelector('h1')
+    const btn = document.querySelector('#btn')
+    const divTag = document.querySelector('div')
+
+    // 2. 버튼 요소에 이벤트 핸들러를 부착
+    btn.addEventListener('click', (event) => {
+      // 2.1 1부터 45 까지의 값이 필요
+      const numbers = _.range(1, 46)
+      // console.log(numbers)
+
+      // 2.2 45개의 요소가 있는 배열에서 6개 번호 추출
+      const sixNumbers = _.sampleSize(numbers, 6)
+      // console.log(sixNumbers)
+
+      const ulTag = document.createElement('ul')
+
+      // 2.3 추출한 번호를 반복하면서 li 요소를 생성
+      sixNumbers.forEach((number) => {
+        const liTag = document.createElement('li')
+        liTag.textContent = number
+        // console.log(liTag)
+        ulTag.appendChild(liTag)
+      })    
+      // console.log(ulTag)
+      divTag.appendChild(ulTag)
+    })
+    
+  </script>
+
+</body>
+</html>

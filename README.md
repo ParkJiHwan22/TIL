@@ -22,16 +22,8 @@
 ### - [*Front-End*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Front-end)
 #### 2023.02.22 ~ 2023.03.08
 
-### - [*JavaScript*]()
-#### 2023.03.13 ~ 
+### - [*JavaScript*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/JavaScript)
+#### 2023.03.13 ~ 2023.03.17
 
-
-## 🍭 인강으로 배운 내용
-
-### -[*IT_Knowledge*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/IT_Knowledge)
-##### 2022.12.30 ~ 2023.01.02
-
-### -[*NDB_Algorithm*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/NDB_Algorithm)
-##### 2022.12.30 ~ 2023.01.25
-
-### -
+### - [*Back-End*](https://github.com/ParkJiHwan22/TIL/tree/main/TIL_Repositories/Back-end)
+#### 2023.03.20 ~ 

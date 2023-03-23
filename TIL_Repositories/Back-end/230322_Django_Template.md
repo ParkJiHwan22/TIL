@@ -48,7 +48,7 @@ def index(request):
 - chained가 가능하며 일부 필터는 인자를 받기도 함
 - 약 60개의 built-in template filters를 제공
 
-``` JavaScript
+``` python
 {{ variable|filter }}
 ```
 
@@ -57,7 +57,7 @@ def index(request):
 - 일부 태그는 시작과 종료 태그가 필요
 - 약 24개의 built-in template tags를 제공
 
-``` JavaScript
+``` python
 {{% tag %}}
 ```
 
@@ -70,32 +70,32 @@ def index(request):
 
 # 2. 템플릿 상속
 
-### 템플릿 상속
-- Template inheritance
-- 페이지의 공통요소를 포함하고, 하위 템플릿이 재정의 할 수 있는 공간을 정의하는 기본 'skeleton'템플릿을 작성하여 상속 구조를 구축
+### 템플릿 상속(Template inheritance)
+- 페이지의 공통 요소를 포함하고, 하위 템플릿이 재정의 할 수 있는 공간을 정의하는 기본 'skeleton'템플릿을 작성하여 상속 구조를 구축
 
 ### 'extends' tag
-- 자식(하위)템플릿이 부모 템플릿을 확장한다는 것을 알림
-- `반드시 템플릿 최상단에 작성되어야 함(2개 이상 사용 불가)`
 
 ``` JavaScript
 {% extends 'path' %}
 ```
 
+- 자식(하위)템플릿이 부모 템플릿을 확장한다는 것을 알림
+- `반드시 템플릿 최상단에 작성되어야 함(2개 이상 사용 불가)`
+
 ### 'block' tag
-- 하위 템플릿에서 재정의(overridden)할 수 있는 블록을 정의(하위 템플릿이 작성할 수 있는 공간을 지정)
 
 ``` JavaScript
 {% block name %}{% endblock name %}
 ```
 
+- 하위 템플릿에서 재정의(overridden)할 수 있는 블록을 정의
+- 하위 템플릿이 작성할 수 있는 공간을 지정
+
 # 3. 요청과 응답 with HTML form
 
 ### 데이터를 보내고 가져오기
 - Sending and Retrieving form data
-- HTML form element를 통해 사용자와 애플리케이션 간 상호작용 이해하기
-
-- HTML form은 HTTP 요청을 서버에 보내는 가장 편리한 방법
+- HTML form element를 통해 사용자와 애플리케이션 간의 상호작용 이해하기
 
 ### 'form' element
 - 사용자로부터 할당된 데이터를 서버로 전송
@@ -106,12 +106,12 @@ def index(request):
 - 데이터를 어디(`action`)로 어떤 방식(`method`)으로 보낼지
 
 ### action
-- 입력 데이터가 전송될 URL을 지정 (목적지)
+- 입력 데이터가 전송ehlf URL을 지정 (목적지)
 - 만약 이 속성을 지정하지 않으면 데이터는 현재 form이 있는 페이지의 URL로 보내짐
 
 ### method
 - 데이터를 어떤 방식으로 보낼 것인지 정의
-- 데이터의 HTTP request methods(GET, POST)를 지정
+- 데이터의 HTTP request methods(GET. POST)를 지정
 
 ### 'input' element
 - 사용자의 데이터를 입력 받을 수 있는 요소
@@ -123,16 +123,24 @@ def index(request):
 
 ### Query String Parameters
 - 사용자의 입력 데이터를 URL 주소에 파라미터를 통해 넘기는 방법
-- 문자열은 앰퍼샌드(&)로 연결된 key=value 쌍으로 구성되며, 기본URL과 물음표(?)로 구분됨
-- 예시: http://host:port/path?key=value&key=value
+- 문자열은 앰퍼샌드(&)로 연결된 key = value 쌍으로 구성되며, 기본 URL과 물음표(?)로 구분됨
+- 예시
+- http://host:port/path?key=value&key=value
 
 # 4. 요청과 응답 활용
 
 ### form 데이터는 어디에 들어 있을까?
 - 모든 요청 데이터는 `HTTP request`객체에 들어있음
+- view 함수의 첫번째 인자
 
 # 99. 참고
 
+### BASE_DIR
+- settings에서 경로지정을 편하게 하기 위해 최상단 지점을 지정 해놓은 변수
+
 ### DTL 주의사항
-- Python처럼 일부 프로그래밍 구조(if, for등)를 사용할 수 있지만 명칭을 그렇게 설계했을 뿐이지 Python 코드를 실행되는 것이 아니며 Python과 아무런 관련이 없음
-- 프로그래밍적 로직이 아니라 프레젠테이션을 표현하기 위한 것
+- Python처럼 일부 프로그래밍 구조(if, for 등)를 사용할 수 있지만 명칭을 그렇게 설계 했을 뿐이지 Python 코드로 실행되는 것이 아니며 Python과 아무런 관련이 없음
+
+- 프로그래밍 적으로 로직이 아니라 프레젠테이션을 표현하기 위한 것임을 명심할 것
+  - 프로그래밍적 로직은 되도록 view 함수에서 작성 및 처리
+

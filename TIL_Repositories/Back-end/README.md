@@ -20,26 +20,29 @@
 ### - [*Django_Model*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230324_Django_Model.md)
 ##### 2023.03.24
 
-### - [*Django_ORM*]()
+### - [*Django_ORM*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230328_Django_ORM.md)
 ##### 2023.03.28
 
-### - [*Django_ORM_2*]()
+### - [*Django_ORM_2*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230329_Django_ORM_2.md)
 ##### 2023.03.29
 
-### - [*Django_ORM_with_view*]()
+### - [*Django_ORM_with_view*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230329_Django_ORM_with_view.md)
 ##### 2023.03.29
 
-### - [*Django_ORM_with_view*]()
+### - [*Django_ORM_with_view*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230330_Django_ORM_with_view_2.md)
 ##### 2023.03.30
 
-### - [*Django_Form*]()
+### - [*Django_Form*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230403_Django_Form.md)
 ##### 2023.04.03
 
-### - [*Django_Handling_HTTP_request*]()
+### - [*Django_Handling_HTTP_request*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230403_Django_Handling_HTTP_requests.md)
 ##### 2023.04.03
 
-### - [*Django_Cookie_&_Session*]()
+### - [*Django_Cookie_&_Session*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230404_Django_Cookie_Session.md)
 ##### 2023.04.04
 
-### - [*Django_Authentication_System_1*]()
+### - [*Django_Authentication_System_1*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230404_Django_Authentication_System_1.md)
 ##### 2023.04.04
+
+### - [*Django_Authentication_System_2*]()
+##### 2023.04.05

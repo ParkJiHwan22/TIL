@@ -46,3 +46,9 @@
 
 ### - [*Django_Authentication_System_2*]()
 ##### 2023.04.05
+
+### - [*Django_Static_files*]()
+##### 2023.04.10
+
+### - [*Django_N_to_1_relationships_1*]()
+##### 2023.04.11

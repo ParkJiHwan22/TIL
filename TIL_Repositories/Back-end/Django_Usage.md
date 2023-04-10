@@ -204,17 +204,116 @@ def index(request):
 - input의 핵심 속성
 - 데이터를 제출했을 때 name 속성에 설정된 값을 통해 사용자가 입력한 데이터에 접근할 수 있음
 
-# **`7. 변수와 URL`**
+# **`7. 변수, APP의 URL`**
 
 ## 1. Variable Routing
 - URL 일부에 변수를 포함시키는 것
 - 변수는 view 함수의 인자로 전달할 수 있음
 
 ``` Python
-path('articles/<int:num>/', views.hello)
-path('hello/<str:name>/', views.greeting)
+path('articles/<int:num>/', views.hello),
+path('hello/<str:name>/', views.greeting),
 ```
 
 ## 2. Path converters
 - URL 변수의 타입을 지정
 - str, int 등 5가지 타입 지원
+
+## 3. APP의 URL
+- 각 앱에 URL을 정의하는 것
+- 프로젝트와 각각의 앱이 URL을 나누어 관리하여 주소를 관리하기 편하게 하기 위함
+
+``` Python
+# crud/urls.py
+
+from django.urls import path, include
+
+urlpatterns = [
+  path('admin/', admin.site.urls),
+  # path('articles/', include('articles.urls')),
+  # path('pages/', include('pages.urls')),
+  ...
+]
+```
+
+## 4. URL 이름 지정(Naming URL patterns)
+- URL에 이름을 지정하는 것
+
+``` python
+# articles/urls.py
+
+path('index/', view.index, name='index'),
+```
+
+## 5. 'url' tag
+- 주어진 URL 패턴의 이름과 일치하는 절대 경로 주소를 반환
+
+``` python
+{% url 'url-name' arg1 arg2 %}
+```
+
+## 6. app_name 속성 지정
+
+``` python
+# articles/ulrs.py
+
+app_name = 'articles'
+urlpatterns = [
+  ...,
+]
+```
+
+## 7. URL tag의 변화
+
+``` python
+{% url 'articles:index' %}
+```
+
+# **`8. model 클래스 작성`**
+
+## 1. model 클래스 작성
+
+``` python
+# articles/models.py
+
+class Article(models.Model):
+  title = models.CharField(max_length=10)
+  content = models.TextField()
+```
+
+## 2. makemigrations
+- model class를 기반으로 설계도(migration)작성
+
+> $ python manage.py makemigrations
+
+## 3. migrate
+- 만들어진 설계도를 DB에 전달하여 반영
+
+> $ python manage.py makemigrations
+
+## 4. admin 계정 생성
+
+> $ python manage.py createsuperuser
+
+## 5. admin에 모델 클래스 등록
+
+``` python
+# articles/admin.py
+
+from django.contrib import admin
+from .models import Article
+
+admin.site.register(Article)
+```
+
+- admin.py에 등록하지 않으면 admin.site에서 확인할 수 없음
+
+# **`9. Django-ORM`**
+
+- Object-Relational-Mapping
+
+## 1. QuerySetAPI 구문
+
+> Article.objects.all()
+
+- Model class, Manager, Queryset API

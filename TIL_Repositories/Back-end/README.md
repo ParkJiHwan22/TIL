@@ -2,7 +2,7 @@
 
 ## 📱목록
 
-### - [*Django_Usage*]()
+### - [*Django_Usage*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/Django_Usage.md)
 ##### 2023.03.20 ~
 
 ### - [*Django_Understanding_Django_and_framework*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230320_Django_basic.md)
@@ -44,11 +44,14 @@
 ### - [*Django_Authentication_System_1*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230404_Django_Authentication_System_1.md)
 ##### 2023.04.04
 
-### - [*Django_Authentication_System_2*]()
+### - [*Django_Authentication_System_2*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230405_Django_Authentication_System_2.md)
 ##### 2023.04.05
 
-### - [*Django_Static_files*]()
+### - [*Django_Static_files*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230410_Django_Static_files.md)
 ##### 2023.04.10
 
-### - [*Django_N_to_1_relationships_1*]()
+### - [*Django_N_to_1_relationships_1*](https://github.com/ParkJiHwan22/TIL/blob/main/TIL_Repositories/Back-end/230411_Django_N_to_1_relationships_1.md)
 ##### 2023.04.11
+
+### - [*Django_N_to_1_relationships_2*]()
+##### 2023.04.12
